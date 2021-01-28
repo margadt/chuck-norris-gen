@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with Chuck Norris Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run the web app execute in your cmd/bash:
+    1. git clone https://github.com/margadt/chuck-norris-gen.git
+    2. cd chuck-norris-gen
+    3. yarn
+    4. yarn start
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `yarn start`
 
