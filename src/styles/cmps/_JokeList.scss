@@ -8,6 +8,8 @@
     margin-top: 40px;
     gap: 10px;
     padding: 0;
+    max-height: 700px;
+    overflow: auto;
 
     li{
         border: 1px solid #b3bec2;
