@@ -41,9 +41,8 @@ function App() {
         ]);
       }
       setFilterBy({
-        name: '',
-        search: '',
-        category: filterBy.category
+        ...filterBy,
+          search:''
       });
     };
 
