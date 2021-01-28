@@ -1,0 +1,58 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: roboto-med, sans-serif;
+
+    .filter-mode {
+        border: 1px solid rgb(241, 90, 36);
+        border-radius: 3px;
+        margin-bottom: 25px;
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            font-size: 15px;
+            border: 0;
+            width: 120px;
+            height: 40px;
+            color: rgb(241, 90, 36);
+            background-color: white;
+        }
+
+        .active {
+            background-color: rgb(241, 90, 36);
+            color: white;
+        }
+    }
+
+    .filter-input {
+        font-family: inherit;
+        background-color: rgb(255, 242, 238);
+        width: 1000px;
+        height: 104px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        label {
+            font-size: 13px;
+        }
+
+        button {
+            font-family: roboto-med, sans-serif;
+            font-size: 13px;
+            color: rgb(179, 190, 194);
+            background-color: rgb(227, 232, 235);
+            border: 0;
+            width: 160px;
+            height: 40px;
+            transition: 0.3s ease;
+
+            &:hover{
+                color: white;
+                background-color: darkseagreen;
+            }
+        }
+    }
+}

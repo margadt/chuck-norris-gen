@@ -1,0 +1,44 @@
+.search-input {
+    width: 365px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        text-indent: 11.5px;
+        width: 80%;
+        height: 100%;
+        border: 1px solid rgb(179, 190, 194);
+    }
+
+    select {
+        text-indent: 11.5px;
+        width: 215px;
+        height: 40px;
+        color: #b3bec2;
+        background-color: white;
+        border: 1px solid #b3bec2;
+
+        option {
+            color: black;
+        }
+
+        &.selected {
+            color: black;
+        }
+    }
+
+    &.select {
+        width: 290px;
+    }
+
+    &.free{
+        width: 768px;
+        justify-content: space-around;
+
+        input{
+            width: 90%;
+        }
+    }
+}

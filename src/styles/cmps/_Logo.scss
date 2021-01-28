@@ -1,0 +1,15 @@
+.logo-container {
+    width: 326px;
+    height: 326px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: -95px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.22);
+
+    img {
+        position: relative;
+        bottom: -45px;
+        right: 7px;
+    }
+}
