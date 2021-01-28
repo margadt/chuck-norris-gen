@@ -6,7 +6,7 @@ const RandomSearch = ({ categories, onChange, filterBy }) => {
     const onSelect = e => {
         onChange(e);
         const { target: { value } } = e;
-        setSelectClass(value !== 1 ? 'selected' : '');
+        setSelectClass(value !== '' ? 'selected' : '');
     }
 
     return <>
