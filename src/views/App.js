@@ -34,7 +34,7 @@ function App() {
           ...jokes,
           ...res.result
         ]);
-      } else if (res.value){
+      } else if (res.value) {
         setJokes([
           ...jokes,
           res
