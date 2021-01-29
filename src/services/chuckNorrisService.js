@@ -9,8 +9,6 @@ const getCategories = async _ => {
     }
 }
 
-
-
 const query = async filterBy => {
     try {
         if (filterBy.search.length > 1) {
@@ -26,8 +24,19 @@ const query = async filterBy => {
 
 }
 
+const getRandomJoke = async filterBy => {
+    try {        
+        const query = `${filterBy.name ? 'name=' + filterBy.name + '&' : ''}${filterBy.category ? 'category=' + filterBy.category : ''}`
+        const res = await fetch(`${BASE_URL}/random?${query}`)
+        return await res.json();
+    } catch (err) {
+        console.log(err)
+    }
+}
+
 const chuckNorrisService = {
     query,
+    getRandomJoke,
     getCategories
 }
 

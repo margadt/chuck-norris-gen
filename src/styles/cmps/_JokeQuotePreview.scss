@@ -1,0 +1,52 @@
+.quote {
+    width: 709px;
+    margin: 52px auto;
+    border-top: 5px dashed rgb(41, 171, 226);
+    border-right: 5px dashed rgb(41, 171, 226);
+    border-bottom: 5px solid rgb(41, 171, 226);
+    border-left: 5px solid rgb(41, 171, 226);
+    color: rgb(41, 171, 226);
+    font-family: "roboto-reg";
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    line-height: 62px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+
+    &::before {
+        content: " ";
+        width: 68px;
+        height: 58px;
+        background-image: url("../../assets/quotation.svg");
+        background-repeat: no-repeat;
+        background-color: white;
+        position: absolute;
+        top: -30px;
+        left: -33px;
+    }
+
+    &.selected::before {
+        background-color: rgb(239, 244, 247);
+    }
+
+    &::after {
+        content: " ";
+        width: 68px;
+        height: 58px;
+        background-image: url("../../assets/quotation.svg");
+        background-repeat: no-repeat;
+        background-color: white;
+        position: absolute;
+        bottom: -30px;
+        right: -33px;
+        transform: rotate(180deg);
+    }
+
+    &.selected::after {
+        background-color: rgb(239, 244, 247);
+    }
+}

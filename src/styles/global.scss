@@ -1,4 +1,5 @@
 //Basic 
+@import "basics/helper";
 @import "basics/layout";
 @import "basics/base";
 
@@ -8,6 +9,7 @@
 @import "cmps/Filter";
 @import "cmps/RandomSearch";
 @import "cmps/JokeList";
+@import "cmps/JokeQuotePreview";
 
 //Views
 @import "views/App";

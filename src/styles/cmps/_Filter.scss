@@ -49,9 +49,9 @@
             height: 40px;
             transition: 0.3s ease;
 
-            &:hover{
+            &.active {
                 color: white;
-                background-color: darkseagreen;
+                background-color: rgb(241, 90, 36);
             }
         }
     }
