@@ -1,6 +1,7 @@
 # Getting Started with Chuck Norris Generator
+### Wep app at https://margadt.github.io/chuck-norris-gen/
 
-### To run the web app execute in your cmd/bash:
+### To run the web app locally execute in your cmd/bash:
     1. git clone https://github.com/margadt/chuck-norris-gen.git
     2. cd chuck-norris-gen
     3. yarn
