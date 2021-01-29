@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chuck-norris-gen/static/css/main.f0f083d3.chunk.css",
+    "main.js": "/chuck-norris-gen/static/js/main.6f32022c.chunk.js",
+    "main.js.map": "/chuck-norris-gen/static/js/main.6f32022c.chunk.js.map",
+    "runtime-main.js": "/chuck-norris-gen/static/js/runtime-main.11fb1530.js",
+    "runtime-main.js.map": "/chuck-norris-gen/static/js/runtime-main.11fb1530.js.map",
+    "static/js/2.28c43214.chunk.js": "/chuck-norris-gen/static/js/2.28c43214.chunk.js",
+    "static/js/2.28c43214.chunk.js.map": "/chuck-norris-gen/static/js/2.28c43214.chunk.js.map",
+    "index.html": "/chuck-norris-gen/index.html",
+    "static/css/main.f0f083d3.chunk.css.map": "/chuck-norris-gen/static/css/main.f0f083d3.chunk.css.map",
+    "static/js/2.28c43214.chunk.js.LICENSE.txt": "/chuck-norris-gen/static/js/2.28c43214.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/chuck-norris-gen/static/media/quotation.c235fd88.svg",
+    "static/media/logo.3f82865e.svg": "/chuck-norris-gen/static/media/logo.3f82865e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11fb1530.js",
+    "static/js/2.28c43214.chunk.js",
+    "static/css/main.f0f083d3.chunk.css",
+    "static/js/main.6f32022c.chunk.js"
+  ]
+}
