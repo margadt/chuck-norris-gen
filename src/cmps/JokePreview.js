@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import JokeQuotePreview from "./JokeQuotePreview";
 
 const JokePreview = ({ joke, selectedJoke, onSelectJoke }) => {
     const [trClass, setTrClass] = useState('');
+    const currentTrRef = useRef(null);
     useEffect(_ => {
         if (joke.id === selectedJoke?.id) {
             setTrClass('selected');
@@ -20,9 +21,10 @@ const JokePreview = ({ joke, selectedJoke, onSelectJoke }) => {
             return;
         }
         onSelectJoke(joke);
+        currentTrRef.current.scrollIntoView();
     }
     return <>
-        <tr className={trClass} onClick={onClick}>
+        <tr className={trClass} onClick={onClick} ref={currentTrRef}>
             <td>{joke.id}</td>
             <td className="capitalize">{joke.categories}</td>
             <td>{date}</td>

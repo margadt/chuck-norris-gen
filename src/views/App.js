@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Filter from '../cmps/Filter';
 import Header from '../cmps/Header';
 import JokeList from '../cmps/JokeList';
@@ -13,6 +13,7 @@ function App() {
   const [randomJoke, setRandomJoke] = useState('');
   const [jokes, setJokes] = useState([]);
   const [selectedJoke, setSelectedJoke] = useState(null);
+  const articleRef = useRef(null);
 
   useEffect(_ => {
     (async _ => {
@@ -34,6 +35,7 @@ function App() {
     if (isRandomMode) {
       const res = await chuckNorrisService.getRandomJoke(filterBy);
       setRandomJoke(res.value);
+      articleRef.current.scrollIntoView();
       return;
     }
     let res = await chuckNorrisService.query(filterBy);
@@ -69,7 +71,7 @@ function App() {
       onChange={handleInput} />
     <section className="content">
       {isRandomMode ?
-        <JokeQuotePreview quote={randomJoke} /> :
+        <JokeQuotePreview quote={randomJoke} articleRef={articleRef} /> :
         <JokeList jokes={jokes} selectedJoke={selectedJoke} onSelectJoke={onSelectJoke} />}
     </section>
 

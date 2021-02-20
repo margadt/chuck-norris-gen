@@ -1,8 +1,8 @@
-const JokeQuotePreview = ({ quote, className }) => {
+const JokeQuotePreview = ({ quote, className, articleRef }) => {
     if (!quote) return '';
     const jokeClass = className ? className : '';
 
-    return <article className={"quote " + jokeClass}>
+    return <article className={"quote " + jokeClass} ref={articleRef}>
         <span>{quote}</span>
     </article>
 }
